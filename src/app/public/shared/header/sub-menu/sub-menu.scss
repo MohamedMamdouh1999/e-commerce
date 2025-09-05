@@ -1,0 +1,32 @@
+.mega-menu {
+  top: 100%;
+  left: 50%;
+  width: 40vw;
+  z-index: 1000;
+  padding: 1rem;
+  display: none;
+  position: absolute;
+  background-color: white;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  &.show {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-column {
+    flex: 1;
+    padding: 1rem;
+    h4 {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: black;
+      display: block;
+      margin-bottom: 0.5rem;
+      &:hover {
+        color: #007BFF;
+      }
+    }
+  }
+}

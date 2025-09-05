@@ -10,19 +10,6 @@
 ## 7- npm i ngx-translate-messageformat-compiler
 
 # Project Structure:
-
-## public
-### i18n
-#### ar.json
-#### en.json
-### images
-
-## admin
-### categories
-### products
-### feedback
-### notifications
-
 ## core
 ### account
 ### home
@@ -33,9 +20,26 @@
 ### profile
 ### notifications
 
+## admin
+### categories
+### products
+### feedback
+### notifications
+
 ## shared
 ### components
 ### enums
 ### models
 ### modules
 ### services
+
+## public
+### i18n
+#### ar.json
+#### en.json
+### images
+
+# Layouts:
+## admin
+## user
+## public

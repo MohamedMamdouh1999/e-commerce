@@ -1,0 +1,28 @@
+<header class="bg-white d-flex align-items-center justify-content-between">
+  <div class="logo fw-bold">Krist</div>
+  <nav class="d-flex align-items-center">
+    <a routerLink="/public/home">Home</a>
+    <div class="position-relative" (mouseenter)="showMenu = true" (mouseleave)="showMenu = false">
+      <a>
+        <span>Shop</span>
+        <i class="fa-solid fa-angle-down"></i>
+      </a>
+      <app-sub-menu [showMenu]="showMenu"/>
+    </div>
+    <a routerLink="/public/story">Our Story</a>
+    <a routerLink="/public/blog">Blog</a>
+    <a routerLink="/public/contact">Contact Us</a>
+  </nav>
+  <div class="d-flex align-items-center justify-content-between">
+    <span class="cursor-pointer">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </span>
+    <span class="cursor-pointer px-3">
+      <i class="fa-regular fa-heart"></i>
+    </span>
+    <span class="cursor-pointer ps-2 pe-3">
+      <i class="fa-solid fa-store"></i>
+    </span>
+    <button class="btn btn-dark border-none text-white bg-black">Login</button>
+  </div>
+</header>
